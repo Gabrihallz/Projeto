@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -49,7 +50,7 @@ body * {
   width: 112px;
 }
 
-#switch{
+#switch {
   position: relative;
   width: 64px;
   margin: 4px auto;
@@ -69,7 +70,7 @@ body * {
   transform: translateY(-50%);
 }
 
-.claro #switch button{
+.claro #switch button {
   right: 0;
   left: initial;
 }
@@ -143,4 +144,14 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/Background.jpg);
+  }
+
+  .claro {
+    --bg-url: url(./assets/Background-claro.jpg);
+  }
 }
